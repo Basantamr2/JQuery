@@ -1,0 +1,102 @@
+:root{
+    --headerColor:#444444;
+    --paraColor:#777777;
+    --red:#D62E33;
+    --placeholderColor:#6C757D;
+}
+/* ---------------------------------- Home ---------------------------------- */
+#home{
+    background-image:linear-gradient(rgba(214, 46, 51 , 0.6),rgba(214, 46, 51 , 0.6)),url('../imgs/events-heavenly-header.jpg');
+    background-size: 100% 100%;
+    background-position: center ;
+    width: 100%;
+    height: 660px;
+}
+#home .headerInfo h2{
+    font-size: 60px;
+}
+#home .leftside .box{
+    width: 250px;
+    left: -250px;
+}
+#home .leftside .box i{
+    transition: all 0.2s;
+    cursor: pointer;
+}
+#home .leftside .box i:hover{
+    color:#601C1A !important ;
+}
+#home .leftside .box ul li{
+    cursor: pointer;
+}
+#home .leftside .box ul li a{
+    transition: all 0.2s;
+}
+#home .leftside .box ul li:hover a{
+    color:#601C1A !important ;
+}
+#home .leftInfo{
+    position: absolute;
+    top: 45%;
+    left: 0;
+    cursor: pointer;
+}
+
+
+/* --------------------------------- Singer --------------------------------- */
+#singer h3{
+    background-color: rgba(214, 46, 51 , 0.6);
+    cursor: pointer;
+}
+#singer .infotext{
+    background-color: #CCCCCC;
+    display: none;
+}
+#singer .box:nth-child(1) .infotext{
+    display: block;
+}
+
+/* ---------------------------------- Count Down --------------------------------- */
+#count{
+    background-image:linear-gradient(rgba(214, 46, 51 , 0.6),rgba(214, 46, 51 , 0.6)),url('../imgs/invitation-2508607__340.jpg');
+    background-position: center center;
+    background-size: 100% 100%;
+    height: 330px;
+}
+
+/* --------------------------------- Contact -------------------------------- */
+#join .para h2{
+    color: var(--headerColor);
+}
+#join .para p{
+    color: var(--paraColor);
+}
+#join .contact strong{
+    color: var(--headerColor);
+    font-size: 18px;
+    font-weight: 900;
+}
+#join .contact p{
+    color:var(--paraColor);
+    font-weight: 400;
+}
+#join .contact .icons i{
+    color: var(--paraColor);
+    cursor: pointer;
+}
+#join .contact .icons i:hover{
+    background-color: var(--red) !important;
+    color: white;
+}
+#join .inner .inputs input::placeholder{
+    color: var(--placeholderColor);
+}
+#join .inner .inputs textarea::placeholder{
+    color: var(--placeholderColor);
+}
+#join .inner .inputs p span,#join .contact p span{
+    color: var(--red);
+}
+#join .inner .btn:hover{
+    background-color: var(--red);
+}
